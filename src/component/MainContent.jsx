@@ -20,9 +20,7 @@ const MainContent = ({ ActiveTab }) => {
     }
   };
   return (
-    <div className="flex flex-1 justify-center items-center ">
-      {renderContent()}
-    </div>
+    <div className="flex flex-1 justify-center items-center">{renderContent()}</div>
   );
 };
 

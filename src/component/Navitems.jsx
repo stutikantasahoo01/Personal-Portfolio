@@ -1,33 +1,20 @@
 import React from "react";
 
-const Navitems = ({ setActiveTab, ActiveTab }) => {
+const Navitems = ({ setActiveTab, ActiveTab, navItems }) => {
   return (
     <div>
-      <ul className="navlist flex gap-9">
-        <li
-          className={ActiveTab === "Home" ? "active-tab" : ""}
-          onClick={() => setActiveTab("Home")}
-        >
-          Home
-        </li>
-        <li
-          className={ActiveTab === "Work" ? "active-tab" : ""}
-          onClick={() => setActiveTab("Work")}
-        >
-          Work
-        </li>
-        <li
-          className={ActiveTab === "Experience" ? "active-tab" : ""}
-          onClick={() => setActiveTab("Experience")}
-        >
-          Experience
-        </li>
-        <li
-          className={ActiveTab === "Contact" ? "active-tab" : ""}
-          onClick={() => setActiveTab("Contact")}
-        >
-          Contact
-        </li>
+      <ul className="navlist flex flex-col gap-8 items-center lg:flex-row">
+        {navItems.map((item, idx) => {
+          return (
+            <li
+              key={idx}
+              className={ActiveTab === item ? "active-tab" : ""}
+              onClick={() => setActiveTab(item)}
+            >
+              {item}
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

@@ -19,20 +19,63 @@
     padding: 5px 10px;
 }
 
-.social-link li {
+.social-link1 li {
     transition: all 0.4s ease-in-out;
 }
 
-.social-link li:hover {
+.social-link1 li:hover {
     transform: scale(0.9);
 
 }
 
-@media (max-width: 768px) {
-    .navlist {
-        display: none;
+@media (max-width:1023px) {
+    .social-link-animate {
+        opacity: 0;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateX(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 }
+
+@media (min-width:1024px) {
+    .social-link-animate {
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
+}
+
+.social-link-animate {
+    animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+
+
+.social-link-animate:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.social-link-animate:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.social-link-animate:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+.social-link-animate:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
 
 h3 {
     font-family: "Comfortaa", sans-serif;
@@ -41,8 +84,7 @@ h3 {
     font-style: normal;
     color: #888888;
     line-height: 1.334;
-    font-size: 1.35em;
-    letter-spacing: .2em;
+    letter-spacing: 3px;
 }
 
 h1 {
@@ -50,10 +92,7 @@ h1 {
     font-weight: 900;
     font-style: normal;
     line-height: 1.167;
-    margin-bottom: 12px;
-    margin-top: 12px;
-    font-size: 3.45em;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 h2 {
@@ -61,7 +100,6 @@ h2 {
     font-weight: 600;
     font-style: normal;
     line-height: 1.167;
-    font-size: 2.05em;
     letter-spacing: 2px;
 }
 
@@ -71,7 +109,6 @@ p {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: .1em;
 }
 
 .name {
@@ -90,7 +127,7 @@ p {
     background-size: contain;
     background-repeat: no-repeat;
     left: -20%;
-    top: 0px;
+    top: -8px;
     transform: rotate(45deg);
     animation: flightPath 5s ease-in-out forwards;
 }
