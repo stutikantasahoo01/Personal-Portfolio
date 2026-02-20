@@ -2,9 +2,9 @@ import React from "react";
 import { Twitter, Facebook, Linkedin, Github, Copyright } from "lucide-react";
 const Footer = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center w-full gap-2">
+    <div className="flex flex-col lg:flex-row items-center w-full gap-2 ">
       <div className=" w-full lg:w-[20%] ">
-        <ul className="w-full gap-4 flex justify-around md:justify-between md:px-4 items-center social-link1">
+        <ul className="w-full gap-4 flex justify-around md:justify-between md:px-4 items-center social-link1 ">
           <li className="social-link-animate">
             {" "}
             <Twitter size={20} strokeWidth={1.5} />
@@ -20,7 +20,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="w-full flex items-center justify-center mt-7 lg:mt-0 ">
+      <div className="w-full hidden md:flex items-center justify-center mt-7 lg:mt-0 ">
         <div className="w-[40%] lg:w-[65%] ">
           <div className="bg-[#dfdfdf] w-full h-px line-1"></div>
         </div>
