@@ -7,7 +7,7 @@ const Navbar = ({ setActiveTab, ActiveTab }) => {
   const [isOpened, setisOpened] = useState(false);
   const navItems = ["Home", "Work", "Experience", "Contact"];
   return (
-    <div className="flex flex-none justify-between items-center px-10 py-10 md:px-25 md:py-20 ">
+    <div className="flex flex-none justify-between items-center px-5 py-5 sm:px-10 sm:py-10 md:px-20 md:py-15 ">
       <Logo />
       <div className="hidden lg:block">
         <Navitems
@@ -24,9 +24,15 @@ const Navbar = ({ setActiveTab, ActiveTab }) => {
         className="lg:hidden"
       >
         {isOpened ? (
-          <X size={28} strokeWidth={2.25} />
+          <X
+            className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10"
+            strokeWidth={2.25}
+          />
         ) : (
-          <EllipsisVertical size={32} strokeWidth={2.25} />
+          <EllipsisVertical
+            className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10"
+            strokeWidth={2.25}
+          />
         )}
       </button>
       <div
@@ -55,7 +61,12 @@ const Navbar = ({ setActiveTab, ActiveTab }) => {
           }}
           className=""
         >
-          {<X size={28} strokeWidth={2.25} />}
+          {
+            <X
+              className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10"
+              strokeWidth={2.25}
+            />
+          }
         </button>
       </div>
     </div>
