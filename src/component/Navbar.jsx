@@ -7,7 +7,7 @@ const Navbar = ({ setActiveTab, ActiveTab }) => {
   const [isOpened, setisOpened] = useState(false);
   const navItems = ["Home", "Work", "Experience", "Contact"];
   return (
-    <div className="flex flex-none justify-between items-center px-5 py-5 sm:px-10 sm:py-10 md:px-20 md:py-15 ">
+    <div className="flex flex-none justify-between items-center px-5 py-2 sm:px-10 sm:py-10 md:px-20 md:py-15 ">
       <Logo />
       <div className="hidden lg:block">
         <Navitems
