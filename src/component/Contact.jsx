@@ -2,8 +2,8 @@ import React from "react";
 import { Mail, User, Send } from "lucide-react";
 const Contact = () => {
   return (
-    <div className="w-full min-h-full flex flex-col items-center justify-center">
-      <div className="flex items-center justify-center gap-2 border-2 border-[#ffffff80] p-2 mb-10 rounded">
+    <div className="w-full min-h-full flex flex-col items-center justify-center p-2">
+      <div className="flex items-center justify-center gap-2 border-2 border-[#ffffff80] sm:p-2 mb-10 rounded">
         <Mail size={18} strokeWidth={1.5} />
         <h3>Stutikantasahoo01@gmail.com</h3>
       </div>
