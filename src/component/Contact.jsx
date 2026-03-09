@@ -27,7 +27,7 @@ const Contact = () => {
         </div>
         <textarea
           className="w-full h-40 p-3 border-2 border-[#ffffff80] rounded mt-10"
-          placeholder="Start typing"
+          placeholder="Start typing..."
         ></textarea>
       </div>
       <div className="flex  items-center justify-center border-2 border-[#ffffff80] rounded mt-7 px-2">
